@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This runs when X server starts
+
+remaps & # run the remaps script, switching caps/esc and more; check it for more info
+unclutter & # remove mouse when idle
+xcompmgr &		# xcompmgr for transparency
+dunst &			# dunst for notifications
+mpd &			# music player daemon-you might prefer it as a service though

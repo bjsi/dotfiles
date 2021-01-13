@@ -1,0 +1,39 @@
+#!/bin/sh
+
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+    src="source ./env/bin/activate" \
+    cfv="vim $HOME/.config/nvim/init.vim" \
+    cfz="vim $ZDOTDIR/.zshrc" \
+    cfa="vim $HOME/.config/shell/aliasrc" \
+    cfp="$HOME/.config/shell/profile" \
+    cf="$HOME/.config" \
+    cfn="$HOME/.config/nvim" \
+    pc="$HOME/Projects/CSharp" \
+    pp="$HOME/Projects/Python" \
+    ya="youtube-dl -x -f 'best/bestaudio'" \
+    config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+
+
+
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	g="git" \
+    gs="git status" \
+    gc="git checkout" \
+	sdn="sudo shutdown -h now" \
+	p="sudo pacman" \

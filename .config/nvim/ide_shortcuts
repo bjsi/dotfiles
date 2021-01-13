@@ -1,0 +1,12 @@
+code_actions,<leader><space>
+navigate_up,[[
+navigate_down,]]
+go_to_def,<leader>gd
+rename,<C-R><C-R>
+format,<leader>cf
+find_usages,<leader>u
+find_implementations,<leader>i
+documentation,<leader>d
+run_test,<leader>rt
+run_tests_file,<leader>rT
+func_signature,<leader>fs

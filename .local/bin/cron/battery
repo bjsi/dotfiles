@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Notify if battery < 25%
+# TODO: Use notify-send
+
+battery="/sys/class/power_supply/BAT0"
+
+[ "$(cat "${battery}/status")" = "Charging" ] && exit
+[ "$(cat "${battery}/capacity")" -lt 25 ] && echo "battery low"

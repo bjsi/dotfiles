@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+# TODO: 
+# Check if there are updates for pacman packages
+# Send notifications via notify-send

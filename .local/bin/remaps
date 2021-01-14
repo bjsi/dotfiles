@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# increase the keyboard rate
+xset r rate 300 50
+# reduce the mouse speed by half
+
+if lsusb | grep -q "Mouse"
+then
+    xinput --set-prop "Logitech G400s Optical Gaming Mouse" "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
+fi
+
+# rebind caps to escape
+setxkbmap -option caps:escape
